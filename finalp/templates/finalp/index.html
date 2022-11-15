@@ -1,9 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Game Zone</title>
+  {% load static %}
+<title>Pagina principal</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="{% static 'finalp/css/style.css' %}" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="wrapper">
@@ -11,7 +12,7 @@
     <div id="headerLeft"></div>
     <div id="headerMid">
       <div id="left">
-        <div id="logo"><img src="images/logo.jpg"  alt=""/></div>
+        <div id="logo"><img src="{% static 'finalp/images/logo2.jpg' %}"  alt=""/></div>
         <div id="mainpiccontainer">
           <div id="mainPic"> </div>
         </div>
@@ -34,47 +35,47 @@
               <div id="productleft"> </div>
               <div id="productMid">
                 <ul>
-                  <li>Remote Control</li>
-                  <li>Wireless Controller</li>
+                  <li>FIFA 23</li>
+                  <li>Wireless Controller PS5</li>
                   <li>PLAYSTATION EYE</li>
-                  <li>PLAYSTATION 3</li>
+                  <li>PLAYSTATION 4</li>
                 </ul>
               </div>
               <div id="productRight"> </div>
               <div id="product1">
-                <div align="center"><img src="images/img-1.jpg" width="132" height="144" alt=""/><br />
-                  <span class="greyBold">Remote</span><br />
-                  <span class="linetrough">price: 2,600</span><br />
+                <div align="center"><img src="{% static 'finalp/images/img-5.jpg' %}" width="132" height="144" alt=""/><br />
+                  <span class="greyBold">FIFA 23</span><br />
+                  <span class="linetrough">precio: 2,600</span><br />
                   <span class="redBold">2,200 </span>
-                  <div class="productText"> In nec tellus congue libero ultricies molestie. Duis et diam.</div>
-                  <a href="products.htm"><img src="images/blue-button.jpg" border="0" alt=""/></a> </div>
+                  <div class="productText"> Juego FIFA 23. Disponible para todas las consolas. </div>
+                  <a href="products.htm"><img src="{% static 'finalp/images/blue-button.jpg' %}" border="0" alt=""/></a> </div>
               </div>
               <div id="product2">
-                <div align="center"><img src="images/img-2.jpg" width="132" height="144" alt=""/><br />
-                  <span class="greyBold">WirelessController</span><span class="lineTrough"><br />
-                  <span class="linetrough">price: 5000</span><br />
+                <div align="center"><img src="{% static 'finalp/images/img-6.jpg' %}" width="132" height="144" alt=""/><br />
+                  <span class="greyBold">Mando PlayStation5</span><span class="lineTrough"><br />
+                  <span class="linetrough">precio: 5000</span><br />
                   </span> <span class="redBold">3,750<br />
                   </span>
-                  <div class="productText"> Duis cursus tortor. Nunc consectetuer odio. Lore augue mattis venenatis. </div>
-                  <a href="products.htm"><img src="images/blue-button.jpg" border="0" alt=""/></a> </div>
+                  <div class="productText"> Control para Playstation5. Stock limitado. </div>
+                  <a href="products.htm"><img src="{% static 'finalp/images/blue-button.jpg' %}" border="0" alt=""/></a> </div>
               </div>
               <div id="product3">
-                <div align="center"><img src="images/img-3.jpg" width="132" height="144" alt=""/><br />
+                <div align="center"><img src="{% static 'finalp/images/img-3.jpg' %}" width="132" height="144" alt=""/><br />
                   <span class="greyBold">PLAYSTATION&reg;EYE</span><span class="style10"><br />
-                  <span class="linetrough">price: 9000</span><br />
+                  <span class="linetrough">precio: 9000</span><br />
                   </span> <span class="redBold">7,500<br />
                   </span>
-                  <div class="productText"> Nunc viverra. Aliquam suscipit egestas turpis. Aenean mollis est. </div>
-                  <a href="products.htm"><img src="images/blue-button.jpg" border="0" alt=""/></a> </div>
+                  <div class="productText"> Camara compatible con los productos de Sony. </div>
+                  <a href="products.htm"><img src="{% static 'finalp/images/blue-button.jpg' %}" border="0" alt=""/></a> </div>
               </div>
               <div id="product4">
-                <div align="center"><img src="images/img-4.jpg" width="132" height="144" alt=""/><br />
-                  <span class="greyBold">PLAYSTATION&reg;3</span><span class="style10"><br />
-                  <span class="linetrough">price: 35,500</span><br />
+                <div align="center"><img src="{% static 'finalp/images/img-7.jpg' %}" width="132" height="144" alt=""/><br />
+                  <span class="greyBold">PLAYSTATION&reg;4</span><span class="style10"><br />
+                  <span class="linetrough">precio: 35,500</span><br />
                   </span> <span class="redBold">29,950<br />
                   </span>
-                  <div class="productText"> In nec tellus congue libero ultricies molestie. Duis et diam.</div>
-                  <a href="products.htm"><img src="images/blue-button.jpg" border="0" alt=""/></a> </div>
+                  <div class="productText"> Producto Playsation4 de Sony.</div>
+                  <a href="products.htm"><img src="{% static 'finalp/images/blue-button.jpg' %}" border="0" alt=""/></a> </div>
               </div>
             </div>
           </div>
@@ -90,7 +91,7 @@
         <div id="headerMid4">
           <div id="mainPic2">
             <h1>New Lunch * </h1>
-            <h2>PLAYSTATION®3 </h2>
+            <h2>PLAYSTATIONï¿½3 </h2>
           </div>
           <div id="whiteBoxleft"> </div>
           <div id="whiteBoxmid">

@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from .models import *
 
+
 #Importar los modelos de .models
 #Ingresar las vistas a usar
 
 def home(request):
     
-    return render(request, 'finalp/home.html')
+    return render(request, 'finalp/index.html')
 
 def consolas(request):
     lista_consolas = Consolas.objects.all()
