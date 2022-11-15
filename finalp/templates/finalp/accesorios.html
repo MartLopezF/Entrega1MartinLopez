@@ -1,35 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seccion de accesorios</title>
-</head>
-<body>
+{% extends 'finalp/index.html' %}
+
+{% block contenido %}
+<h1>Estos son los accesorios en stock:</h1>
+
+<div class="accesorios">
+        
+
+    <ol>
+        {% for p in accesorios %}
+        <li>
+
+        <h2> {{ p.nombre }}</h2>
+        <p>Marca: {{ p.marca }}</p>
+        <p>Compatibilidad: {{ p.compatibilidad }}</p>
+        <p>Precio: ${{ p.precio }}</p>
+        
+        </li>   
+        {% endfor %}
+    </ol>
     
-    <h1> Aqui puede ver todos los accesorios disponibles para las consolas </h1>
-
-    <div class="accesorios">
-        
-
-        <ol>
-            {% for p in accesorios %}
-            <li>
-
-            <h2> {{ p.nombre }}</h2>
-            <p>Marca: {{ p.marca }}</p>
-            <p>Compatibilidad: {{ p.compatibilidad }}</p>
-            <p>Precio: ${{ p.precio }}</p>
-            
-            </li>   
-            {% endfor %}
-        </ol>
-        
 
 
 
-    </div>
-
-</body>
-</html>
+</div>
+{% endblock %}

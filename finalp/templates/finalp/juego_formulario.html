@@ -1,0 +1,35 @@
+{% extends 'finalp/index.html' %}
+
+{% block contenido %}
+
+<form action="/juegos/crear/" method="post">
+    {% csrf_token %}
+
+    <p>
+        Juego <input type="text" name="juego" id="">
+
+    </p>
+
+    <p>
+        Lanzamiento <input type="date" name="fecha de lanzamiento" id="">
+
+    </p>
+
+    <p>
+        Categoria <input type="text" name="categoria" id="">
+
+    </p>
+
+    <p>
+        Precio <input type="number" name="precio" id="">
+
+    </p>
+
+
+
+    <input type="submit" value="Ingresar">
+
+</form>
+
+
+{% endblock %}

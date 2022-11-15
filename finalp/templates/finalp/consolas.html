@@ -1,35 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seccion de consolas</title>
-</head>
-<body>
+{% extends 'finalp/index.html' %}
 
-    <h1> Aqui puede ver las consolas disponibles </h1>
+{% block contenido %}
 
-    <div class="consolas">
+<h1> Aqui puede ver las consolas disponibles </h1>
+
+<div class="consolas">
         
 
-        <ol>
-            {% for p in consolas %}
-            <li>
+     <ol>
+        {% for p in consolas %}
+        <li>
 
-            <h2> {{ p.nombre }}</h2>
-            <p>Marca: {{ p.marca }}</p>
-            <p>Fecha de lanzamiento: {{ p.fecha_lanzamiento }}</p>
-            <p>Precio: ${{ p.precio }}</p>
+        <h2> {{ p.nombre }}</h2>
+        <p>Marca: {{ p.marca }}</p>
+        <p>Fecha de lanzamiento: {{ p.fecha_lanzamiento }}</p>
+        <p>Precio: ${{ p.precio }}</p>
             
-            </li>   
-            {% endfor %}
-        </ol>
+        </li>   
+        {% endfor %}
+     </ol>
         
 
 
 
-    </div>
-    
-</body>
-</html>
+</div>
+{% endblock %}

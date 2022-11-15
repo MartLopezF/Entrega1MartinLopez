@@ -1,35 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seccion de juegos</title>
-</head>
-<body>
+{% extends 'finalp/index.html' %}
 
-    <h1> Aqui puede ver los juegos disponibles </h1>
+{% block contenido %}
+<h1>Juegardos:</h1>
 
-    <div class="juegos">
+<div class="juegos">
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="/juegos/crear/">Registrar juego</a>
+
+    <ol>
+        {% for p in juegos %}
+        <li>
+
+        <h2> {{ p.nombre }}</h2>
+        <p>Fecha de lanzamiento: {{ p.fecha_lanzamiento }}</p>
+        <p>Categoria: {{ p.categoria }}</p>
+        <p>Precio: ${{ p.precio }}</p>
         
-
-        <ol>
-            {% for p in juegos %}
-            <li>
-
-            <h2> {{ p.nombre }}</h2>
-            <p>Fecha de lanzamiento: {{ p.fecha_lanzamiento }}</p>
-            <p>Categoria: {{ p.categoria }}</p>
-            <p>Precio: ${{ p.precio }}</p>
-            
-            </li>   
-            {% endfor %}
-        </ol>
-        
-
-
-
-    </div>
+        </li>   
+        {% endfor %}
+    </ol>
     
-</body>
-</html>
+
+
+
+</div>
+{% endblock %}

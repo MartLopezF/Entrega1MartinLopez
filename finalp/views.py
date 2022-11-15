@@ -35,3 +35,16 @@ def accesorios(request):
     }
 
     return render(request, 'finalp/accesorios.html', datos)
+
+def creacion_juego(request):
+
+    if request.method == "POST":
+        nombre_juego = request.POST["juego"]
+        lanzamiento = request.POST["fecha de lanzamiento"]
+        categoria = request.POST["categoria"]
+        precio = request.POST["precio"]
+
+        juego = Juegos(nombre=nombre_juego, fecha_lanzamiento=lanzamiento, categoria=categoria, precio=precio)
+        juego.save()
+
+    return render(request, "finalp/juego_formulario.html")

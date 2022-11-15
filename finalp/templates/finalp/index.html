@@ -1,129 +1,90 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  {% load static %}
-<title>Pagina principal</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link href="{% static 'finalp/css/style.css' %}" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-<div id="wrapper">
-  <div id="header">
-    <div id="headerLeft"></div>
-    <div id="headerMid">
-      <div id="left">
-        <div id="logo"><img src="{% static 'finalp/images/logo2.jpg' %}"  alt=""/></div>
-        <div id="mainpiccontainer">
-          <div id="mainPic"> </div>
-        </div>
-      </div>
-      <div id="right">
-        <div id="mainNav">
-          <ul>
-            <li class="first"><a class="current" href="#">Home</a><span class="white"> /</span></li>
-            <li><a href="about_us.html">About Us</a><span class="white"> /</span></li>
-            <li><a href="projects.html">Projects</a><span class="white"> /</span></li>
-            <li><a href="services.html">Services</a><span class="white"> /</span></li>
-            <li><a href="support.html">Support</a><span class="white"> /</span></li>
-            <li><a href="privacy.html">Privacy</a><span class="white"> /</span></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div id="productContainer">
-          <div class="productContainer_left">
-            <div class="productContainer_right">
-              <div id="productleft"> </div>
-              <div id="productMid">
-                <ul>
-                  <li>FIFA 23</li>
-                  <li>Wireless Controller PS5</li>
-                  <li>PLAYSTATION EYE</li>
-                  <li>PLAYSTATION 4</li>
-                </ul>
-              </div>
-              <div id="productRight"> </div>
-              <div id="product1">
-                <div align="center"><img src="{% static 'finalp/images/img-5.jpg' %}" width="132" height="144" alt=""/><br />
-                  <span class="greyBold">FIFA 23</span><br />
-                  <span class="linetrough">precio: 2,600</span><br />
-                  <span class="redBold">2,200 </span>
-                  <div class="productText"> Juego FIFA 23. Disponible para todas las consolas. </div>
-                  <a href="products.htm"><img src="{% static 'finalp/images/blue-button.jpg' %}" border="0" alt=""/></a> </div>
-              </div>
-              <div id="product2">
-                <div align="center"><img src="{% static 'finalp/images/img-6.jpg' %}" width="132" height="144" alt=""/><br />
-                  <span class="greyBold">Mando PlayStation5</span><span class="lineTrough"><br />
-                  <span class="linetrough">precio: 5000</span><br />
-                  </span> <span class="redBold">3,750<br />
-                  </span>
-                  <div class="productText"> Control para Playstation5. Stock limitado. </div>
-                  <a href="products.htm"><img src="{% static 'finalp/images/blue-button.jpg' %}" border="0" alt=""/></a> </div>
-              </div>
-              <div id="product3">
-                <div align="center"><img src="{% static 'finalp/images/img-3.jpg' %}" width="132" height="144" alt=""/><br />
-                  <span class="greyBold">PLAYSTATION&reg;EYE</span><span class="style10"><br />
-                  <span class="linetrough">precio: 9000</span><br />
-                  </span> <span class="redBold">7,500<br />
-                  </span>
-                  <div class="productText"> Camara compatible con los productos de Sony. </div>
-                  <a href="products.htm"><img src="{% static 'finalp/images/blue-button.jpg' %}" border="0" alt=""/></a> </div>
-              </div>
-              <div id="product4">
-                <div align="center"><img src="{% static 'finalp/images/img-7.jpg' %}" width="132" height="144" alt=""/><br />
-                  <span class="greyBold">PLAYSTATION&reg;4</span><span class="style10"><br />
-                  <span class="linetrough">precio: 35,500</span><br />
-                  </span> <span class="redBold">29,950<br />
-                  </span>
-                  <div class="productText"> Producto Playsation4 de Sony.</div>
-                  <a href="products.htm"><img src="{% static 'finalp/images/blue-button.jpg' %}" border="0" alt=""/></a> </div>
-              </div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Pagina inicial- Entrega final</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'finalp/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">Inicio</a>
+                <a class="navbar-brand" href="/consolas/"> Consolas</a>
+                <a class="navbar-brand" href="/juegos/"> Juegos</a>
+                <a class="navbar-brand" href="/accesorios/"> Accesorios</a>
+                <a class="btn btn-primary" href="/juegos/crear/">Registrar juego</a>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div id="headerRight"> </div>
-  </div>
-  <div id="container2">
-    <div id="headerLeft3">
-      <div id="headerRight5">
-        <div id="headerMid4">
-          <div id="mainPic2">
-            <h1>New Lunch * </h1>
-            <h2>PLAYSTATION�3 </h2>
-          </div>
-          <div id="whiteBoxleft"> </div>
-          <div id="whiteBoxmid">
-            <h3><span class="specialBold">Special</span><span class="featuresBold"> Features</span></h3>
-            <div class="features">
-              <ul>
-                <li>3.2 GHz Cell</li>
-                <li>256 MB of 3200 MHz XDR</li>
-                <li>DVD Movie Playback</li>
-                <li>Dolby Digital 5.1</li>
-                <li>Memory Stick Pro Duo</li>
-                <li>Graphic Processor NVIDIA RSX</li>
-                <li>Digital Out (Optical) Connector</li>
-                <li>Online &amp; Multiplayer Gaming </li>
-              </ul>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <div class="text-center text-white">
+                            <!-- Page heading-->
+                            <h1 class="mb-5">Bienvenido a la pagina de juegos para el proyecto!</h1>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div id="whiteBoxright"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="clear"></div>
-  <div id="bottomBarleft"></div>
-  <div id="bottomBarmid">
-    <div id="bottomMenu">
-      <ul style="color:#666;">
-        Copyright (c) Sitename.com. All rights reserved. Design by Stylish <a href="http://www.stylishtemplate.com">Website Templates</a>.
-      </ul>
-    </div>
-  </div>
-  <div id="bottomBarright"></div>
-</div>
-</body>
+        </header>
+    {% block contenido %}
+
+    {%  endblock %}
+        <!-- Footer-->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><a href="#!">About</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Contact</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                        </ul>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; Martin Lopez Coderhouse 2022. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'finalp/js/scripts.js' %}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
