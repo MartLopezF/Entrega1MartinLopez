@@ -1,0 +1,35 @@
+{% extends 'finalp/index.html' %}
+
+{% block contenido %}
+
+<form action="/consolas/crear/" method="post">
+    {% csrf_token %}
+
+    <p>
+        Modelo de consola <input type="text" name="consola" id="">
+
+    </p>
+
+    <p>
+        Marca <input type="text" name="marca" id="">
+
+    </p>
+
+    <p>
+        Lanzamiento <input type="date" name="fecha de lanzamiento" id="">
+
+    </p>
+
+    <p>
+        Precio <input type="number" name="precio" id="">
+
+    </p>
+
+
+
+    <input type="submit" value="Ingresar">
+
+</form>
+
+
+{% endblock %}

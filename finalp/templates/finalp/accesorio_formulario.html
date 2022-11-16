@@ -1,0 +1,35 @@
+{% extends 'finalp/index.html' %}
+
+{% block contenido %}
+
+<form action="/accesorios/crear/" method="post">
+    {% csrf_token %}
+
+    <p>
+        Accesorio <input type="text" name="accesorio" id="">
+
+    </p>
+
+    <p>
+        Marca <input type="text" name="marca" id="">
+
+    </p>
+
+    <p>
+        Compatibilidad <input type="text" name="compatibilidad" id="">
+
+    </p>
+
+    <p>
+        Precio <input type="number" name="precio" id="">
+
+    </p>
+
+
+
+    <input type="submit" value="Ingresar">
+
+</form>
+
+
+{% endblock %}
