@@ -1,0 +1,19 @@
+{% extends 'finalp/index.html' %}
+
+{% block contenido %}
+
+
+    <form action="{% url 'juegos-buscar-resultados' %}" method="get">
+
+        <p>
+            Nombre del juego: <input type="text" name="nombre_juego">
+            <input type="submit" value="buscar">
+
+
+
+        </p>
+
+    </form>
+
+
+{% endblock %}

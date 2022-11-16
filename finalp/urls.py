@@ -8,5 +8,7 @@ urlpatterns = [
     path('consolas/', consolas, name="consolas"),
     path('juegos/', juegos, name="juegos"),
     path('juegos/crear/', creacion_juego, name="juegos-crear"),
+    path('juegos/buscar/', buscador, name="juegos-buscar"),
+    path('juegos/buscar/resultados', resultado_busqueda, name="juegos-buscar-resultados"),
     path('accesorios/', accesorios, name="accesorios"),
 ]

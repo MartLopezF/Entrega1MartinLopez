@@ -48,3 +48,15 @@ def creacion_juego(request):
         juego.save()
 
     return render(request, "finalp/juego_formulario.html")
+
+
+def buscador(request):
+
+    return render(request, "finalp/buscar.html")
+
+
+def resultado_busqueda(request):
+    nombre_juego = request.GET["nombre_juego"]
+    juegos = Juegos.objects.filter(nombre__icontains=nombre_juego)
+
+    return render(request, "finalp/resultado_busqueda.html", {"juegos": juegos})
