@@ -9,3 +9,4 @@ correspondiente y agregar los datos (atributos de los modelos)
 5. Descargo un template de una pagina desde free-css.com
 6. Creo un formulario para poder agregar juegos nuevos a la pagina desde la url 'Juegos'
 7. Vinculo el formulario con el model para agregar los juegos a la base de datos
+8. Creo el buscador para filtrar juegos por el nombre
